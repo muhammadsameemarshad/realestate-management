@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="user_inherited_form" model="ir.ui.view">
+            <field name="name">res.users.form.inherit</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <!-- Add the property_ids field here -->
+                        <field name="property_ids"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
