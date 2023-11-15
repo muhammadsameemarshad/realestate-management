@@ -85,7 +85,7 @@ class EstateProperties(models.Model):
         if self.garden:
             # Set default values when 'garden' is True
             self.garden_area = 10.0
-            self.garden_orientation = 'north'
+            self.garden_orientation = 'North'
         else:
             # Clear fields when 'garden' is False
             self.garden_area = 0.0
